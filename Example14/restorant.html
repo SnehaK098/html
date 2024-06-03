@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    * {
+        margin: 0;
+    }
+
+    .wrapper {
+        margin-left: 60px;
+        margin-right: 60px;
+        background: rgba(5, 14, 30, 0.881) url(hero1.png);
+        background-blend-mode: darken;
+        background-repeat: round;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+        color: #fea116;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 20px;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    ul a {
+        text-decoration: none;
+        color: white;
+    }
+
+    ul .block1 {
+        background-color: #fea116;
+        color: white;
+        padding: 8px;
+        width: 130px;
+        border-radius: 2px;
+        border: none;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: transparent;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropbutton {
+        color: white;
+        font-size: 15px;
+    }
+
+    ul a:hover,
+    button:hover {
+        color: #fea116;
+    }
+
+    .navbar h1 {
+        color: #fea116;
+        font-size: 30px;
+    }
+
+    .statement {
+        display: flex;
+    }
+
+    .header {
+        width: 50%;
+        padding-top: 200px;
+        padding-left: 30px;
+        padding-bottom: 100px;
+    }
+
+    .header h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 55px;
+        color: #e2e3e4;
+    }
+
+    .header p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        color: #e2e3e4;
+    }
+
+    .button {
+        margin-top: 25px;
+        padding: 17px;
+        width: 180px;
+        background-color: #fea116;
+        color: #e2e3e4;
+        font-size: 16px;
+        border-radius: 3px;
+        border: none;
+    }
+
+    .img {
+        display: flex;
+        width: 50%;
+        margin: 20px;
+        padding: 90px;
+        padding-bottom: 5px;
+    }
+
+    .img img {
+        width: 100%;
+        
+    }
+
+    .block1:hover {
+        color: black;
+    }
+
+    button:hover {
+        color: black;
+    }
+
+    .svg {
+        color: #fea116;
+        font-size: 14px;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <section class="wrapper">
+        <div class="nav">
+            <div class="logo">
+                <img src="logo.png" alt="logo" width="40px" height="40px">&nbsp;&nbsp;&nbsp;
+                <h1>Restoran</h1>
+            </div>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">MENU</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="" class="dropbutton">PAGES
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#">PAGE 1</a>
+                            <a href="#">PAGE 2</a>
+                            <a href="#">PAGE 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">CONTACT</a></li>
+                <button class="block1">BOOK A TABLE</button>
+            </ul>
+        </div>
+        <div class="statement">
+            <div class="header">
+                <h1>Enjoy Our <br>Delicious Meal</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sollicitudin mi et nisl fermentum porta. Curabitur porta efficitur maximus.
+                </p>
+                <button class="button">BOOK A TABLE</button>
+            </div>
+            <div class="img">
+                <img src="hero.png" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
