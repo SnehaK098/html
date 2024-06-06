@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 4px 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+<div class="header">
+  <h1>Responsive Image Gallery</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+<div class="row"> 
+  <div class="column">
+    <img src="ig1.jpg" style="width:100%">
+    <img src="ig2.jpg" style="width:100%">
+    <img src="ig3.jpg" style="width:100%">
+    <img src="ig4.jpg" style="width:100%">
+    <img src="ig5.jpg" style="width:100%">
+    <img src="ig6.jpg" style="width:100%">
+    <img src="ig7.jpg" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="ig8.jpg" style="width:100%">
+    <img src="ig9.jpg" style="width:100%">
+    <img src="ig10.jpg" style="width:100%">
+    <img src="ig11.jpg" style="width:100%">
+    <img src="ig12.jpg" style="width:100%">
+    <img src="ig13.jpg" style="width:100%">
+    <img src="ig14.jpg" style="width:100%">
+  </div> 
+  <div class="column">
+    <img src="ig1.jpg" style="width:100%">
+    <img src="ig2.jpg" style="width:100%">
+    <img src="ig3.jpg" style="width:100%">
+    <img src="ig4.jpg" style="width:100%">
+    <img src="ig8.jpg" style="width:100%">
+    <img src="ig9.jpg" style="width:100%">
+    <img src="ig10.jpg" style="width:100%">
+</div>
+<div class="column">
+    <img src="ig12.jpg" style="width:100%">
+    <img src="ig13.jpg" style="width:100%">
+    <img src="ig14.jpg" style="width:100%">
+    <img src="ig11.jpg" style="width:100%">
+    <img src="ig12.jpg" style="width:100%">
+    <img src="ig13.jpg" style="width:100%">
+    <img src="ig14.jpg" style="width:100%">
+</div>
+</div>
+</body>
+</html>
+
+

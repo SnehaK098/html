@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    nav{
+        display: flex;
+        background-color: rgb(32, 107, 32);
+        padding: 20px;
+        align-items:center ;
+        justify-content: space-between;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    ul{
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+        margin-right: 40px;
+    }
+    .container{
+        
+        height: 550px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    img{
+        height: 200px;
+    }
+    .image{
+        margin-right: 200px;
+        animation: rotate 5s infinite ;
+        
+    }
+    @keyframes rotate {
+        50%{transform: rotateZ(360deg) ;}
+        
+    }
+    .display{
+        margin-left:60px;
+        color: green;
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .display button{
+        border-radius: 20px;
+        padding: 10px;
+        border: hidden;
+        width: 150px;
+    }
+    .text{
+        height: 250px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+    }
+    .box{
+        height: 140px;
+        width: 430px;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 0 6px 6px rgb(0, 0,0,0.1);
+    }
+    .box h2 p{
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        height: 350px;
+    }
+    .SIGN-UP{
+        margin-left: 50px;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+    .form input{
+        background-color: transparent;
+        border-radius: 15px;
+        width: 300px;
+        padding: 7px;
+    }
+    .form button{
+        padding: 8px;
+        width: 40%;
+        border-radius: 10px;
+    }
+    .contact {
+        margin-right: 40px;
+    }
+</style>
+<body>
+    <nav>
+        <h3 style="font-size: 20px; margin-left: 40px;">Landing Page</h3>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SIGN-UP</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="display">
+            <h2>Discover The World Of <br> Barbie</h2>
+            <button>
+                Explore More
+            </button>
+        </div>
+        <div class="image">
+            <img src="Barbie.jpg" alt="">
+        </div>
+    </div>
+    <h2 style="text-align: center; font-size: 20px;font-family: Arial, Helvetica, sans-serif; font-size: 20px;">barbie</h2>
+     <div class="text" >
+        <div class="box" >
+            <h2>DSA</h2>
+            <P>Data Structures and Algorithms (DSA) is a fundamental part of Computer Science that teaches you how to think and solve complex problems systematically. Using the right data structure and algorithm makes your program run faster, especially when working with lots of data.</P>
+        </div>
+        <div class="box">
+            <H2>HTML</H2>
+            <P>HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the browser how to display the content.</P>
+        </div>
+        <div class="box">
+            <H3>Javascript</H3>
+            <p>JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. </p>
+
+        </div> 
+    </div>
+    <h2 style="font-family: Arial, Helvetica, sans-serif; margin: 30px; text-align: center;">SIGN-UP</h2>
+    <div class="footer">
+        <div class="SIGN-UP">
+            <form action="" class="form">
+                <label for="">Your Name</label><br>
+                <input type="text" placeholder="Enter your name here"><br>
+                <label for="">Your Email</label><br>
+                <input type="email" placeholder="Enter your email here"><br>
+                <label for="">Your Password</label><br>
+                <input type="password" placeholder="Enter your password here"><br>
+                <button>
+                    SIGN-UP
+                </button>
+    
+            </form>
+
+        </div>
+        <div class="contact">
+            <h3 style="font-family: Arial, Helvetica, sans-serif;">Contact Us</h3>
+            <p style="font-family: Arial, Helvetica, sans-serif; color:grey">A-143, 9th, Sovereign Corporate Tower, Sector-136,<br> Noida, Uttar Pradhesh -201305</p>
+            <h3 style="font-family: Arial, Helvetica, sans-serif;">More Information</h3>
+            <p style="font-family: Arial, Helvetica, sans-serif; color:grey">Greets to all the Geeks out there! We welcome you to be the <br>
+                platform where are consistently strive to offer the best of <br>
+                education. This platform has been designed for every geek <br>
+                wishing to expand their knowledge, share their knowledge and <br>
+                is ready to grab their dream job. We have millions of articles,<br>
+                live as well as online courses. thousands of tutorials and much <br>
+                more just for the geek inside you. Thank you for choosing and <br>
+                supporting us!</p>
+
+        </div>
+    </div>
+</body>
+</html>
